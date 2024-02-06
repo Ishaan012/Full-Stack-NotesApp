@@ -1,13 +1,16 @@
 import './App.css';
+import React from 'react'
+import Home from './components/Home';
+import Navbar from './components/Navbar';
+import Alert from './components/Alert';
 
-import React, { Component } from 'react'
-
-export default class App extends Component {
-  render() {
-    return (
-      <div>
-        HELLO MY FIRST REACT BASED COMPONENT
-      </div>
-    )
-  }
+export default function App() {
+  return (
+    <div>
+      <Navbar />
+      <Alert message="This is an amazing react product"/>
+      <Home />
+    </div>
+  )
 }
+
